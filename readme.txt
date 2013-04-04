@@ -36,6 +36,10 @@ BadgeOS BadgeStack Add-On is made available by [Credly, LLC](https://credly.com/
 * [E-Mailing List](http://badgeos.org/join-list/ "BadgeOS Occasional Mailing List - No spam!") - Occasional updates via e-mail
 * [GitHub](https://github.com/opencredit/badgeos "BadgeOS on GitHub") - Report issues, contribute code
 
+= Acknowledgements =
+
+BadgeStack is a proud winner of the “Badges for Lifelong Learning Competition” which is supported by the John D. and Catherine T. MacArthur Foundation, as well as the Gates Foundation and Mozilla, and is administered by co-located HASTAC teams based at the University of California Humanities Research Institute and John Hope Franklin Humanities Institute at Duke University.
+
 = License Info =
 
 Copyright © 2012-2013 Credly, LLC
