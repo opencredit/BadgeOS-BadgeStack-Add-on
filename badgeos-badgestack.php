@@ -4,7 +4,7 @@
  * Plugin URI: http://www.learningtimes.com/
  * Description: This BadgeOS Extension will automatically create all the necessary Achievment Types and Pages for your very own self-hosted BadgeStack site.
  * Author: Credly
- * Version: 1.0
+ * Version: 1.0.0
  * Author URI: https://credly.com/
  * License: GNU AGPL
  */
