@@ -41,6 +41,7 @@ class BadgeOS_BadgeStack {
 
 		// If BadgeOS is unavailable, deactivate our plugin
 		add_action( 'admin_notices', array( $this, 'maybe_disable_plugin' ) );
+		add_action( 'init', array( $this, 'after_activate' ), 999 );
 
 	}
 
@@ -94,8 +95,28 @@ class BadgeOS_BadgeStack {
 			// Update any steps awaiting final connections
 			$this->update_step_connections();
 
+			// Finally, setup option for secondary activation functions
+			add_option( 'BadgeOS_BadgeStack_Activated', true );
+
 		}
 
+	}
+
+	/**
+	 * Secondary Activation Functions
+	 *
+	 * This is for things that have to run just AFTER we've activated,
+	 * And we only want them to ever run the one time.
+	 *
+	 * @since 1.0.0
+	 */
+	function after_activate() {
+
+		// If we've just completed activation, flush rewrite rules
+		if ( get_option( 'BadgeOS_BadgeStack_Activated' ) ) {
+			flush_rewrite_rules();
+			delete_option( 'BadgeOS_BadgeStack_Activated' );
+		}
 	}
 
 	/**
