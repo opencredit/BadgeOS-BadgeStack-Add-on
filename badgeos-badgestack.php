@@ -54,28 +54,51 @@ class BadgeOS_BadgeStack {
 		// If BadgeOS is available, run our activation functions
 		if ( $this->meets_requirements() ) {
 
-			// Setup our new Achievement Types
-			$this->register_achievement_type( __( 'Community Badge', 'badgeos-badgestack' ), __( 'Community Badges', 'badgeos-badgestack' ) );
-			$this->register_achievement_type( __( 'Quest Badge', 'badgeos-badgestack' ), __( 'Quest Badges', 'badgeos-badgestack' ) );
-			$this->register_achievement_type( __( 'Quest', 'badgeos-badgestack' ), __( 'Quests', 'badgeos-badgestack' ) );
-			$this->register_achievement_type( __( 'Level', 'badgeos-badgestack' ), __( 'Levels', 'badgeos-badgestack' ) );
+			// Setup an empty array to use for storing our achievement type post_types
+			$this->type = array();
 
-			// Register our post types and flush rewrite rules
-			flush_rewrite_rules();
+			// Setup our new Achievement Types
+			$achievement_types = array (
+				'community-badge' => array(
+						'singular' => __( 'Community Badge', 'badgeos-badgestack' ),
+						'plural'   => __( 'Community Badges', 'badgeos-badgestack' ),
+					),
+				'quest-badge' => array(
+						'singular' =>  __( 'Quest Badge', 'badgeos-badgestack' ),
+						'plural'   =>  __( 'Quest Badges', 'badgeos-badgestack' ),
+					),
+				'quest' => array(
+						'singular' => __( 'Quest', 'badgeos-badgestack' ),
+						'plural'   => __( 'Quests', 'badgeos-badgestack' ),
+					),
+				'level' => array(
+						'singular' => __( 'Level', 'badgeos-badgestack' ),
+						'plural'   => __( 'Levels', 'badgeos-badgestack' ),
+					),
+			);
+			foreach ( $achievement_types as $type => $name ) {
+
+				// Register our achievement type
+				$this->register_achievement_type( $name['singular'], $name['plural'] );
+
+				// Store it's sanitized singular title so we know what to use for post_type registering posts
+				// Note: we do this because the singular title is translatable, and can therefore change
+				$this->type[$type] = sanitize_title( $name['singular'] );
+			}
 
 			// Loop through all of our sample data and create each achievement
 			foreach ( $this->get_achievement_posts() as $achievement ) {
 				$this->create_achievement_post( $achievement );
 			}
 
-			// Finally, update any steps awaiting final connections
+			// Update any steps awaiting final connections
 			$this->update_step_connections();
 
 		}
 
 	}
 
-		/**
+	/**
 	 * Check if BadgeOS is available
 	 *
 	 * @since  1.0.0
@@ -100,7 +123,7 @@ class BadgeOS_BadgeStack {
 		if ( ! $this->meets_requirements() ) {
 		// Display our error
 	    echo '<div id="message" class="error">';
-	    echo '<p>' . sprintf( __( 'BadgeOS BadgeStack Builder requires BadgeOS and has been <a href="%s">deactivated</a>. Please install and activate BadgeOS and then reactivate this plugin.', 'badgeos-badgestack' ), admin_url( 'plugins.php' ) ) . '</p>';
+	    echo '<p>' . sprintf( __( 'BadgeOS BadgeStack Add-On requires BadgeOS and has been <a href="%s">deactivated</a>. Please install and activate BadgeOS and then reactivate this plugin.', 'badgeos-badgestack' ), admin_url( 'plugins.php' ) ) . '</p>';
 	    echo '</div>';
 
 	    // Deactivate our plugin
@@ -112,21 +135,21 @@ class BadgeOS_BadgeStack {
 	 * Helper function for registering our different achievement types
 	 *
 	 * @since  1.0.0
-	 * @param  string  $singular_name The singular name for the achiement
-	 * @param  string  $plural_name   The plural name for the achievement
+	 * @param  string  $singular_name    The singular name for the achiement
+	 * @param  string  $plural_name      The plural name for the achievement
 	 */
 	private function register_achievement_type( $singular_name = '', $plural_name = '' ) {
 
 		// Only create the achievement type post if it doesn't already exist
-		if ( ! get_page_by_title( ucfirst( $singular_name ), 'OBJECT', 'achievement-type' ) ) {
+		if ( ! get_page_by_title( $singular_name, 'OBJECT', 'achievement-type' ) ) {
 			$achievement_post_id = wp_insert_post( array(
-				'post_title'   => ucfirst( $singular_name ),
-				'post_status'  => 'publish',
-				'post_author'  => 1,
-				'post_type'    => 'achievement-type',
+				'post_title'  => $singular_name,
+				'post_status' => 'publish',
+				'post_author' => 1,
+				'post_type'   => 'achievement-type',
 			) );
-			update_post_meta( $achievement_post_id, '_badgeos_singular_name', ucfirst( $singular_name ) );
-			update_post_meta( $achievement_post_id, '_badgeos_plural_name', ucfirst( $plural_name ) );
+			update_post_meta( $achievement_post_id, '_badgeos_singular_name', $singular_name );
+			update_post_meta( $achievement_post_id, '_badgeos_plural_name', $plural_name );
 			update_post_meta( $achievement_post_id, '_badgeos_show_in_menu', true );
 		}
 
@@ -140,6 +163,7 @@ class BadgeOS_BadgeStack {
 				'post_type'    => 'page',
 			) );
 		}
+
 	}
 
 	/**
@@ -336,7 +360,7 @@ class BadgeOS_BadgeStack {
 		return array(
 			// Community Badges
 			array(
-				'post_type'    => 'community-badge',
+				'post_type'    => $this->type['community-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Active Learner', 'badgeos-badgestack' ),
@@ -352,7 +376,7 @@ class BadgeOS_BadgeStack {
 				),
 			),
 			array(
-				'post_type'    => 'community-badge',
+				'post_type'    => $this->type['community-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Commentator', 'badgeos-badgestack' ),
@@ -382,7 +406,7 @@ class BadgeOS_BadgeStack {
 				),
 			),
 			array(
-				'post_type'    => 'community-badge',
+				'post_type'    => $this->type['community-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Community Activist', 'badgeos-badgestack' ),
@@ -401,14 +425,14 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Do any 3 Quests', 'badgeos-badgestack' ),
 						'count'            => 3,
 						'trigger_type'     => 'any-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'order'            => 0,
 					),
 					array(
 						'post_title'       => __( 'Earn any 2 Community Badges', 'badgeos-badgestack' ),
 						'count'            => 2,
 						'trigger_type'     => 'any-achievement',
-						'achievement_type' => 'community-badge',
+						'achievement_type' => $this->type['community-badge'],
 						'order'            => 1,
 					),
 					array(
@@ -421,13 +445,13 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Complete Both Levels', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'all-achievements',
-						'achievement_type' => 'level',
+						'achievement_type' => $this->type['level'],
 						'order'            => 3,
 					),
 				),
 			),
 			array(
-				'post_type'    => 'community-badge',
+				'post_type'    => $this->type['community-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Innovator', 'badgeos-badgestack' ),
@@ -445,7 +469,7 @@ class BadgeOS_BadgeStack {
 
 			// Levels
 			array(
-				'post_type'    => 'level',
+				'post_type'    => $this->type['level'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Adventures in Badging', 'badgeos-badgestack' ),
@@ -465,14 +489,14 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Earn the Badge: “Badge Explorer”', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest-badge',
+						'achievement_type' => $this->type['quest-badge'],
 						'achievement_post' => __( 'Badge Explorer', 'badgeos-badgestack' ),
 						'order'            => 0,
 					),
 				),
 			),
 			array(
-				'post_type'    => 'level',
+				'post_type'    => $this->type['level'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Begin Earning & Issuing Badges', 'badgeos-badgestack' ),
@@ -492,7 +516,7 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Earn the Badge: “Credly Member”', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest-badge',
+						'achievement_type' => $this->type['quest-badge'],
 						'achievement_post' => __( 'Credly Member', 'badgeos-badgestack' ),
 						'order'            => 0,
 					),
@@ -500,7 +524,7 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Earn the Badge: “Badge Issuer”', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest-badge',
+						'achievement_type' => $this->type['quest-badge'],
 						'achievement_post' => __( 'Badge Issuer', 'badgeos-badgestack' ),
 						'order'            => 1,
 					),
@@ -509,7 +533,7 @@ class BadgeOS_BadgeStack {
 
 			// Quests
 			array(
-				'post_type'    => 'quest',
+				'post_type'    => $this->type['quest'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Customize Your Profile', 'badgeos-badgestack' ),
@@ -538,7 +562,7 @@ class BadgeOS_BadgeStack {
 				'steps' => array(),
 			),
 			array(
-				'post_type'    => 'quest',
+				'post_type'    => $this->type['quest'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Give Someone Credit', 'badgeos-badgestack' ),
@@ -566,7 +590,7 @@ class BadgeOS_BadgeStack {
 				'steps' => array(),
 			),
 			array(
-				'post_type'    => 'quest',
+				'post_type'    => $this->type['quest'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Join Credly', 'badgeos-badgestack' ),
@@ -589,7 +613,7 @@ class BadgeOS_BadgeStack {
 				'steps' => array(),
 			),
 			array(
-				'post_type'    => 'quest',
+				'post_type'    => $this->type['quest'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Watch a Video: Learn about Badges', 'badgeos-badgestack' ),
@@ -617,7 +641,7 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Earn “Customize Your Profile” 30 times.', 'badgeos-badgestack' ),
 						'count'            => 30,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'achievement_post' => __( 'Customize Your Profile', 'badgeos-badgestack' ),
 						'order'            => 0,
 					),
@@ -632,7 +656,7 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Earn “Give Someone Credit” 1 time.', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'achievement_post' => __( 'Give Someone Credit', 'badgeos-badgestack' ),
 						'order'            => 2,
 					),
@@ -641,7 +665,7 @@ class BadgeOS_BadgeStack {
 
 			// Quest Badges
 			array(
-				'post_type'    => 'quest-badge',
+				'post_type'    => $this->type['quest-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Badge Explorer', 'badgeos-badgestack' ),
@@ -660,14 +684,14 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Quest: Watch a Video: "Learn about Badges"', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'achievement_post' => __( 'Watch a Video: Learn about Badges', 'badgeos-badgestack' ),
 						'order'            => 0,
 					),
 				),
 			),
 			array(
-				'post_type'    => 'quest-badge',
+				'post_type'    => $this->type['quest-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Badge Issuer', 'badgeos-badgestack' ),
@@ -695,14 +719,14 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Quest: Give Someone Credit', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'achievement_post' => __( 'Give Someone Credit', 'badgeos-badgestack' ),
 						'order'            => 0,
 					),
 				),
 			),
 			array(
-				'post_type'    => 'quest-badge',
+				'post_type'    => $this->type['quest-badge'],
 				'post_status'  => 'publish',
 				'post_author'  => 1,
 				'post_title'   => __( 'Credly Member', 'badgeos-badgestack' ),
@@ -731,7 +755,7 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Quest: Create a free account on Credly.com', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'achievement_post' => __( 'Join Credly', 'badgeos-badgestack' ),
 						'order'            => 0,
 					),
@@ -739,7 +763,7 @@ class BadgeOS_BadgeStack {
 						'post_title'       => __( 'Quest: Customize Your Credly Profile', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
-						'achievement_type' => 'quest',
+						'achievement_type' => $this->type['quest'],
 						'achievement_post' => __( 'Customize Your Profile', 'badgeos-badgestack' ),
 						'order'            => 1,
 					),
