@@ -24,6 +24,34 @@ Badges are Mozilla OBI compatible and sharable via [Credly](https://credly.com/ 
 
 [Get the BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS").
 
+= Stay Connected / Helpful Links =
+
+BadgeOS BadgeStack Add-On is made available by [Credly, LLC](https://credly.com/ "Credly web site"). Here are some ways to stay connected and to see what else we are up to:
+
+* [BadgeOS.org](http://badgeos.org/ "BadgeOS web site") - Contact Us, Video Tutorials, Examples, News
+* [Credly.com](https://credly.com/ "Credly web site") - Recognize, manage and share lifelong achievement
+* [Credly Knowledgebase](http://support.credly.com/ "Credly FAQ and Support") - Credly FAQ
+* [Facebook](https://www.facebook.com/Credly "Credly on Facebook") - Credly on Facebook
+* [Twitter](https://twitter.com/credly "Credly on Facebook") - Credly Tweets
+* [E-Mailing List](http://badgeos.org/join-list/ "BadgeOS Occasional Mailing List - No spam!") - Occasional updates via e-mail
+* [GitHub](https://github.com/opencredit/badgeos "BadgeOS on GitHub") - Report issues, contribute code
+
+= License Info =
+
+Copyright © 2012-2013 Credly, LLC
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU Affero General Public License, version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General
+Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/ "GNU AGPLv3").
+
 
 == Installation ==
 
