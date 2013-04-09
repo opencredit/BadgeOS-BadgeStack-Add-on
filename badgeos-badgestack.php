@@ -667,13 +667,6 @@ class BadgeOS_BadgeStack {
 						'order'            => 0,
 					),
 					array(
-						'post_title'       => __( 'Earn any task 3 times.', 'badgeos-badgestack' ),
-						'count'            => 3,
-						'trigger_type'     => 'any-achievement',
-						'achievement_type' => 'task',
-						'order'            => 1,
-					),
-					array(
 						'post_title'       => __( 'Earn “Give Someone Credit” 1 time.', 'badgeos-badgestack' ),
 						'count'            => 1,
 						'trigger_type'     => 'specific-achievement',
