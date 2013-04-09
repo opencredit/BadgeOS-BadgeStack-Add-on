@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BadgeOS BadgeStack Add-On 1.0\n"
-"POT-Creation-Date: 2013-04-04 15:35-0500\n"
-"PO-Revision-Date: 2013-04-04 15:35-0500\n"
+"POT-Creation-Date: 2013-04-09 17:11-0500\n"
+"PO-Revision-Date: 2013-04-09 17:11-0500\n"
 "Last-Translator: Brian Richards <brian@rzen.net>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -236,9 +236,9 @@ msgstr ""
 msgid "Earn the Badge: “Badge Explorer”"
 msgstr ""
 
-#: ../badgeos-badgestack.php:514 ../badgeos-badgestack.php:692
+#: ../badgeos-badgestack.php:514 ../badgeos-badgestack.php:685
 #: ../../badgeos-badgestack/badgeos-badgestack.php:514
-#: ../../badgeos-badgestack/badgeos-badgestack.php:692
+#: ../../badgeos-badgestack/badgeos-badgestack.php:685
 msgid "Badge Explorer"
 msgstr ""
 
@@ -277,9 +277,9 @@ msgstr ""
 msgid "Earn the Badge: “Credly Member”"
 msgstr ""
 
-#: ../badgeos-badgestack.php:541 ../badgeos-badgestack.php:753
+#: ../badgeos-badgestack.php:541 ../badgeos-badgestack.php:746
 #: ../../badgeos-badgestack/badgeos-badgestack.php:541
-#: ../../badgeos-badgestack/badgeos-badgestack.php:753
+#: ../../badgeos-badgestack/badgeos-badgestack.php:746
 msgid "Credly Member"
 msgstr ""
 
@@ -288,17 +288,17 @@ msgstr ""
 msgid "Earn the Badge: “Badge Issuer”"
 msgstr ""
 
-#: ../badgeos-badgestack.php:549 ../badgeos-badgestack.php:718
+#: ../badgeos-badgestack.php:549 ../badgeos-badgestack.php:711
 #: ../../badgeos-badgestack/badgeos-badgestack.php:549
-#: ../../badgeos-badgestack/badgeos-badgestack.php:718
+#: ../../badgeos-badgestack/badgeos-badgestack.php:711
 msgid "Badge Issuer"
 msgstr ""
 
 #: ../badgeos-badgestack.php:560 ../badgeos-badgestack.php:666
-#: ../badgeos-badgestack.php:788
+#: ../badgeos-badgestack.php:781
 #: ../../badgeos-badgestack/badgeos-badgestack.php:560
 #: ../../badgeos-badgestack/badgeos-badgestack.php:666
-#: ../../badgeos-badgestack/badgeos-badgestack.php:788
+#: ../../badgeos-badgestack/badgeos-badgestack.php:781
 msgid "Customize Your Profile"
 msgstr ""
 
@@ -353,11 +353,11 @@ msgid ""
 "begin earning and sharing credit you receive for your achievements."
 msgstr ""
 
-#: ../badgeos-badgestack.php:589 ../badgeos-badgestack.php:681
-#: ../badgeos-badgestack.php:744
+#: ../badgeos-badgestack.php:589 ../badgeos-badgestack.php:674
+#: ../badgeos-badgestack.php:737
 #: ../../badgeos-badgestack/badgeos-badgestack.php:589
-#: ../../badgeos-badgestack/badgeos-badgestack.php:681
-#: ../../badgeos-badgestack/badgeos-badgestack.php:744
+#: ../../badgeos-badgestack/badgeos-badgestack.php:674
+#: ../../badgeos-badgestack/badgeos-badgestack.php:737
 msgid "Give Someone Credit"
 msgstr ""
 
@@ -406,9 +406,9 @@ msgid ""
 "badge on Credly.com that acknowledges these values in practice in the world. "
 msgstr ""
 
-#: ../badgeos-badgestack.php:617 ../badgeos-badgestack.php:780
+#: ../badgeos-badgestack.php:617 ../badgeos-badgestack.php:773
 #: ../../badgeos-badgestack/badgeos-badgestack.php:617
-#: ../../badgeos-badgestack/badgeos-badgestack.php:780
+#: ../../badgeos-badgestack/badgeos-badgestack.php:773
 msgid "Join Credly"
 msgstr ""
 
@@ -443,9 +443,9 @@ msgid ""
 "and curate your achievements -- including those you earn while on this site."
 msgstr ""
 
-#: ../badgeos-badgestack.php:630 ../badgeos-badgestack.php:761
+#: ../badgeos-badgestack.php:630 ../badgeos-badgestack.php:754
 #: ../../badgeos-badgestack/badgeos-badgestack.php:630
-#: ../../badgeos-badgestack/badgeos-badgestack.php:761
+#: ../../badgeos-badgestack/badgeos-badgestack.php:754
 msgid ""
 "Credly empowers people to earn and give credit wherever it is due -- "
 "empowering everyone to acknowledge, share and reward achievement. Today, we "
@@ -453,9 +453,9 @@ msgid ""
 "joining the Credly community."
 msgstr ""
 
-#: ../badgeos-badgestack.php:640 ../badgeos-badgestack.php:709
+#: ../badgeos-badgestack.php:640 ../badgeos-badgestack.php:702
 #: ../../badgeos-badgestack/badgeos-badgestack.php:640
-#: ../../badgeos-badgestack/badgeos-badgestack.php:709
+#: ../../badgeos-badgestack/badgeos-badgestack.php:702
 msgid "Watch a Video: Learn about Badges"
 msgstr ""
 
@@ -509,16 +509,11 @@ msgstr ""
 
 #: ../badgeos-badgestack.php:670
 #: ../../badgeos-badgestack/badgeos-badgestack.php:670
-msgid "Earn any task 3 times."
-msgstr ""
-
-#: ../badgeos-badgestack.php:677
-#: ../../badgeos-badgestack/badgeos-badgestack.php:677
 msgid "Earn “Give Someone Credit” 1 time."
 msgstr ""
 
-#: ../badgeos-badgestack.php:693
-#: ../../badgeos-badgestack/badgeos-badgestack.php:693
+#: ../badgeos-badgestack.php:686
+#: ../../badgeos-badgestack/badgeos-badgestack.php:686
 msgid ""
 "A badge is a validated display of accomplishment, skill, quality or interest "
 "that can be earned in any environment. Badges can represent traditional "
@@ -527,8 +522,8 @@ msgid ""
 "about this new form of achievement recognition and to consider its potential."
 msgstr ""
 
-#: ../badgeos-badgestack.php:694
-#: ../../badgeos-badgestack/badgeos-badgestack.php:694
+#: ../badgeos-badgestack.php:687
+#: ../../badgeos-badgestack/badgeos-badgestack.php:687
 msgid ""
 "A badge is a validated display of accomplishment, skill, quality or interest "
 "that can be earned in any environment. The earner of this badge has taken "
@@ -536,21 +531,21 @@ msgid ""
 "consider its potential."
 msgstr ""
 
-#: ../badgeos-badgestack.php:700
-#: ../../badgeos-badgestack/badgeos-badgestack.php:700
+#: ../badgeos-badgestack.php:693
+#: ../../badgeos-badgestack/badgeos-badgestack.php:693
 msgid ""
 "You are taking steps to explore the potential for badges and the unique "
 "possibilities this form of achievement recognition affords to learners "
 "throughout their lives."
 msgstr ""
 
-#: ../badgeos-badgestack.php:705
-#: ../../badgeos-badgestack/badgeos-badgestack.php:705
+#: ../badgeos-badgestack.php:698
+#: ../../badgeos-badgestack/badgeos-badgestack.php:698
 msgid "Quest: Watch a Video: \"Learn about Badges\""
 msgstr ""
 
-#: ../badgeos-badgestack.php:719
-#: ../../badgeos-badgestack/badgeos-badgestack.php:719
+#: ../badgeos-badgestack.php:712
+#: ../../badgeos-badgestack/badgeos-badgestack.php:712
 msgid ""
 "A badge says as much about the person or group who issued it as it does "
 "about the recipient.  To earn this \"Issuer\" badge, you will think about "
@@ -559,29 +554,29 @@ msgid ""
 "who deserves to be recognized."
 msgstr ""
 
-#: ../badgeos-badgestack.php:720
-#: ../../badgeos-badgestack/badgeos-badgestack.php:720
+#: ../badgeos-badgestack.php:713
+#: ../../badgeos-badgestack/badgeos-badgestack.php:713
 msgid ""
 "To earn this \"Issuer\" badge, you will think about something you value in "
 "the world, define the criteria by which you and others will know that value "
 "has been exhibited, and then identify someone who deserves to be recognized."
 msgstr ""
 
-#: ../badgeos-badgestack.php:726
-#: ../../badgeos-badgestack/badgeos-badgestack.php:726
+#: ../badgeos-badgestack.php:719
+#: ../../badgeos-badgestack/badgeos-badgestack.php:719
 msgid ""
 "You have taken the time to consider what you value in the world, you have "
 "defined a badge that represents those values, and you have identified and "
 "issued the badge to someone deserving of recognition."
 msgstr ""
 
-#: ../badgeos-badgestack.php:740
-#: ../../badgeos-badgestack/badgeos-badgestack.php:740
+#: ../badgeos-badgestack.php:733
+#: ../../badgeos-badgestack/badgeos-badgestack.php:733
 msgid "Quest: Give Someone Credit"
 msgstr ""
 
-#: ../badgeos-badgestack.php:754
-#: ../../badgeos-badgestack/badgeos-badgestack.php:754
+#: ../badgeos-badgestack.php:747
+#: ../../badgeos-badgestack/badgeos-badgestack.php:747
 msgid ""
 "To receive this badge, the earner needs to create a free profile on Credly "
 "to receive, manage and share their lifelong achievements, and they need to "
@@ -589,21 +584,21 @@ msgid ""
 "that they have observed first-hand."
 msgstr ""
 
-#: ../badgeos-badgestack.php:755
-#: ../../badgeos-badgestack/badgeos-badgestack.php:755
+#: ../badgeos-badgestack.php:748
+#: ../../badgeos-badgestack/badgeos-badgestack.php:748
 msgid ""
 "This badge is earned by creating a profile on Credly to receive, manage and "
 "share one's lifelong credentials and achievements, and by issuing a badge to "
 "someone else for a valued accomplishment or contribution."
 msgstr ""
 
-#: ../badgeos-badgestack.php:776
-#: ../../badgeos-badgestack/badgeos-badgestack.php:776
+#: ../badgeos-badgestack.php:769
+#: ../../badgeos-badgestack/badgeos-badgestack.php:769
 msgid "Quest: Create a free account on Credly.com"
 msgstr ""
 
-#: ../badgeos-badgestack.php:784
-#: ../../badgeos-badgestack/badgeos-badgestack.php:784
+#: ../badgeos-badgestack.php:777
+#: ../../badgeos-badgestack/badgeos-badgestack.php:777
 msgid "Quest: Customize Your Credly Profile"
 msgstr ""
 
