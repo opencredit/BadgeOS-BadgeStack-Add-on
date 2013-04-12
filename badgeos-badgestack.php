@@ -4,7 +4,7 @@
  * Plugin URI: http://www.learningtimes.com/
  * Description: This BadgeOS add-on automatically creates achievement types, pages and sample content to jumpstart your own badging system.
  * Author: Credly
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author URI: https://credly.com/
  * License: GNU AGPL
  */
