@@ -724,8 +724,7 @@ class BadgeOS_BadgeStack {
 						'e-learning'            => 2985,
 						'e-learning (pedagogy)' => 3109,
 						'web based training'    => 2987
-					),
-					'_badgeos_credly_badge_id'  => 216
+					)
 
 				),
 				'steps' => array(
@@ -761,8 +760,7 @@ class BadgeOS_BadgeStack {
 						'e-learning (pedagogy)' => 3109,
 						'adult education'       => 3095,
 						'development of educational opportunities' => 3059
-					),
-					'_badgeos_credly_badge_id'  => 210
+					)
 				),
 				'steps' => array(
 					array(
