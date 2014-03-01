@@ -1,7 +1,7 @@
 === BadgeOS BadgeStack Add-on ===
-Contributors: credly, webdevstudios, williamsba1, rzen, Messenlehner, LisaSabinWilson, tw2113
+Contributors: LearningTimes, webdevstudios, williamsba1, rzen, Messenlehner, LisaSabinWilson, tw2113
 Donate link: http://badgeos.org/contribute/donate/
-Tags: badge, badges, openbadges, credly, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit, badgeOS
+Tags: badge, badges, openbadges, learningtimes, credly, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit, badgeOS
 Requires at least: 3.5
 Tested up to: 3.5.1
 Stable tag: 1.0.1
@@ -26,13 +26,13 @@ Badges are Mozilla OBI compatible and sharable via [Credly](https://credly.com/ 
 
 = Stay Connected / Helpful Links =
 
-BadgeOS BadgeStack Add-On is made available by [Credly, LLC](https://credly.com/ "Credly web site"). Here are some ways to stay connected and to see what else we are up to:
+BadgeOS BadgeStack Add-On is made available by [LearningTimes, LLC](http://www.LearningTimes.com/ "LearningTimes web site"). Here are some ways to stay connected and to see what else we are up to:
 
 * [BadgeOS.org](http://badgeos.org/ "BadgeOS web site") - Contact Us, Video Tutorials, Examples, News
 * [Credly.com](https://credly.com/ "Credly web site") - Manage lifelong credentials that matter
 * [Credly Knowledgebase](http://support.credly.com/ "Credly FAQ and Support") - Credly FAQ
-* [Facebook](https://www.facebook.com/Credly "Credly on Facebook") - Credly on Facebook
-* [Twitter](https://twitter.com/credly "Credly on Facebook") - Credly Tweets
+* [Facebook](https://www.facebook.com/LearningTimes "LearningTimes on Facebook") - LearningTimes on Facebook
+* [Twitter](https://twitter.com/LearningTimes "LearningTimes on Facebook") - LearningTimes Tweets
 * [E-Mailing List](http://badgeos.org/join-list/ "BadgeOS Occasional Mailing List - No spam!") - Occasional updates via e-mail
 * [GitHub](https://github.com/opencredit/badgeos "BadgeOS on GitHub") - Report issues, contribute code
 
@@ -42,7 +42,7 @@ BadgeStack is a proud winner of the â€œBadges for Lifelong Learning Competitionâ
 
 = License Info =
 
-Credly, LLC licenses the BadgeOS BadgeStack Add-On to you under the terms of the GNU Affero General Public License, version 3, as published by the Free Software Foundation.
+LearningTimes, LLC licenses the BadgeOS BadgeStack Add-On to you under the terms of the GNU Affero General Public License, version 3, as published by the Free Software Foundation.
 
 There is NO WARRANTY for this software, express or implied, including the implied warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License, version 3, at [http://www.gnu.org/licenses/agpl-3.0.html](http://www.gnu.org/licenses/agpl-3.0.html "License") for more details.
 
