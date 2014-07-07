@@ -1,16 +1,16 @@
 <?php
 /**
  * Plugin Name: BadgeOS BadgeStack Add-On
- * Plugin URI: http://www.learningtimes.com/
+ * Plugin URI: http://www.badgeos.org/
  * Description: This BadgeOS add-on automatically creates achievement types, pages and sample content to jumpstart your own badging system.
- * Author: Credly
+ * Author: LearningTimes, LLC
  * Version: 1.0.1
  * Author URI: https://credly.com/
  * License: GNU AGPL
  */
 
 /*
- * Copyright © 2012-2013 Credly, LLC
+ * Copyright © 2012-2013 LearningTimes, LLC
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License, version 3,
