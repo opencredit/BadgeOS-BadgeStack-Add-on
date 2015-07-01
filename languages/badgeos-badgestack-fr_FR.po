@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BadgeOS BadgeStack Add-On 1.0\n"
 "POT-Creation-Date: 2015-06-26 12:42-0600\n"
-"PO-Revision-Date: 2015-06-29 16:50-0500\n"
+"PO-Revision-Date: 2015-07-01 02:12-0500\n"
 "Last-Translator: Julien Lamarche <jlam@credil.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: badgeos-badgestack.php:403
 msgid "Commentator"
-msgstr ""
+msgstr "Commentateur"
 
 #: badgeos-badgestack.php:404 badgeos-badgestack.php:405
 msgid ""
@@ -110,15 +110,15 @@ msgstr ""
 
 #: badgeos-badgestack.php:416
 msgid "Visit this site at least 5 times"
-msgstr ""
+msgstr "Visitez ce site au moins 5 fois."
 
 #: badgeos-badgestack.php:422
 msgid "Comment at least 10 times on others' posts"
-msgstr ""
+msgstr "Commentez au moins 10 fois sur les billets des autres"
 
 #: badgeos-badgestack.php:433
 msgid "Community Activist"
-msgstr ""
+msgstr "Activiste communautaire"
 
 #: badgeos-badgestack.php:434
 msgid ""
@@ -142,23 +142,23 @@ msgstr ""
 
 #: badgeos-badgestack.php:446
 msgid "Do any 3 Quests"
-msgstr ""
+msgstr "Complétez 3 quêtes"
 
 #: badgeos-badgestack.php:453
 msgid "Earn any 2 Community Badges"
-msgstr ""
+msgstr "Obtenez 2 badges communautaires quelconques"
 
 #: badgeos-badgestack.php:460
 msgid "Post at least 20 comments"
-msgstr ""
+msgstr "Postez au moins 20 commentaires"
 
 #: badgeos-badgestack.php:466
 msgid "Complete Both Levels"
-msgstr ""
+msgstr "Completez les deux niveaux"
 
 #: badgeos-badgestack.php:478
 msgid "Innovator"
-msgstr ""
+msgstr "Innovateur"
 
 #: badgeos-badgestack.php:479
 msgid ""
@@ -181,7 +181,7 @@ msgstr ""
 
 #: badgeos-badgestack.php:496
 msgid "Adventures in Badging"
-msgstr ""
+msgstr "Aventures en badging"
 
 #: badgeos-badgestack.php:497
 msgid ""
@@ -206,15 +206,15 @@ msgstr ""
 
 #: badgeos-badgestack.php:510
 msgid "Earn the Badge: “Badge Explorer”"
-msgstr ""
+msgstr "Gagnez le badge: \"Explorateur de badge\""
 
 #: badgeos-badgestack.php:514 badgeos-badgestack.php:685
 msgid "Badge Explorer"
-msgstr ""
+msgstr "Explorateur de badge"
 
 #: badgeos-badgestack.php:523
 msgid "Begin Earning & Issuing Badges"
-msgstr ""
+msgstr "Commencez à gagner et émettre des badges"
 
 #: badgeos-badgestack.php:524
 msgid ""
@@ -240,24 +240,24 @@ msgstr ""
 
 #: badgeos-badgestack.php:537
 msgid "Earn the Badge: “Credly Member”"
-msgstr ""
+msgstr "Gagnez le badge \"Membre Credly\""
 
 #: badgeos-badgestack.php:541 badgeos-badgestack.php:745
 msgid "Credly Member"
-msgstr ""
+msgstr "Membre Credly"
 
 #: badgeos-badgestack.php:545
 msgid "Earn the Badge: “Badge Issuer”"
-msgstr ""
+msgstr "Gagnez le badge: \"Émetteur de badge\""
 
 #: badgeos-badgestack.php:549 badgeos-badgestack.php:711
 msgid "Badge Issuer"
-msgstr ""
+msgstr "Émetteur de badge"
 
 #: badgeos-badgestack.php:560 badgeos-badgestack.php:666
 #: badgeos-badgestack.php:779
 msgid "Customize Your Profile"
-msgstr ""
+msgstr "Personnalisez votre profile"
 
 #: badgeos-badgestack.php:561
 msgid ""
@@ -310,7 +310,7 @@ msgstr ""
 #: badgeos-badgestack.php:589 badgeos-badgestack.php:674
 #: badgeos-badgestack.php:736
 msgid "Give Someone Credit"
-msgstr ""
+msgstr "Donner à quelqu'un des crédits"
 
 #: badgeos-badgestack.php:590
 msgid ""
@@ -356,7 +356,7 @@ msgstr ""
 
 #: badgeos-badgestack.php:617 badgeos-badgestack.php:771
 msgid "Join Credly"
-msgstr ""
+msgstr "Inscrivez-vous à Credly"
 
 #: badgeos-badgestack.php:618
 msgid ""
@@ -397,7 +397,7 @@ msgstr ""
 
 #: badgeos-badgestack.php:640 badgeos-badgestack.php:702
 msgid "Watch a Video: Learn about Badges"
-msgstr ""
+msgstr "Regardez un vidéo: Apprenez au sujet des badges"
 
 #: badgeos-badgestack.php:641
 msgid ""
@@ -441,11 +441,11 @@ msgstr ""
 
 #: badgeos-badgestack.php:662
 msgid "Earn “Customize Your Profile” 30 times."
-msgstr ""
+msgstr " Gagnez \"Personnalisez vore profile\" 30 fois"
 
 #: badgeos-badgestack.php:670
 msgid "Earn “Give Someone Credit” 1 time."
-msgstr ""
+msgstr "Gagnez 1 fois \"Donnez à quelqu'un des crédits\""
 
 #: badgeos-badgestack.php:686
 msgid ""
@@ -473,7 +473,7 @@ msgstr ""
 
 #: badgeos-badgestack.php:698
 msgid "Quest: Watch a Video: \"Learn about Badges\""
-msgstr ""
+msgstr "Quête: Regardez un vidéo: Apprenez au sujet des badges"
 
 #: badgeos-badgestack.php:712
 msgid ""
@@ -500,7 +500,7 @@ msgstr ""
 
 #: badgeos-badgestack.php:732
 msgid "Quest: Give Someone Credit"
-msgstr ""
+msgstr "Quête: Donnez à quelqu'un des crédits"
 
 #: badgeos-badgestack.php:746
 msgid ""
@@ -519,30 +519,32 @@ msgstr ""
 
 #: badgeos-badgestack.php:767
 msgid "Quest: Create a free account on Credly.com"
-msgstr ""
+msgstr "Quête: Créez un compte gratuit sur Credly.com"
 
 #: badgeos-badgestack.php:775
 msgid "Quest: Customize Your Credly Profile"
-msgstr ""
+msgstr "Quête: Personalisez votre profile credly"
 
 #. Plugin Name of the plugin/theme
 msgid "BadgeOS BadgeStack Add-On"
-msgstr ""
+msgstr "Additif BadgeStack pour BadgeOS"
 
 #. Plugin URI of the plugin/theme
 msgid "http://www.badgeos.org/"
-msgstr ""
+msgstr "http://www.badgeos.org/"
 
 #. Description of the plugin/theme
 msgid ""
 "This BadgeOS add-on automatically creates achievement types, pages and "
 "sample content to jumpstart your own badging system."
 msgstr ""
+"Cet additif BadgeOS créé automatiquement des types d'accomplissements, pages "
+"et des exemples de contenu pour commencer votre propre système de badges."
 
 #. Author of the plugin/theme
 msgid "LearningTimes, LLC"
-msgstr ""
+msgstr "LearningTimes, ltée"
 
 #. Author URI of the plugin/theme
 msgid "https://credly.com/"
-msgstr ""
+msgstr "https://credly.com/"
