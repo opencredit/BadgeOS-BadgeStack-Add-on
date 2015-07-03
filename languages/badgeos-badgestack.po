@@ -233,7 +233,7 @@ msgstr ""
 
 #: ../badgeos-badgestack.php:510
 #: ../../badgeos-badgestack/badgeos-badgestack.php:510
-msgid "Earn the Badge: “Badge Explorer”"
+msgid "Earn the Badge: &#8220;Badge Explorer&#8221;"
 msgstr ""
 
 #: ../badgeos-badgestack.php:514 ../badgeos-badgestack.php:685
@@ -250,7 +250,7 @@ msgstr ""
 #: ../badgeos-badgestack.php:524
 #: ../../badgeos-badgestack/badgeos-badgestack.php:524
 msgid ""
-"In this Level you’ll set-up a profile on Credly so you can earn, store, and "
+"In this Level you'll set-up a profile on Credly so you can earn, store, and "
 "share badges. You'll also issue a badge to one or more people who "
 "demonstrate skills, values or behaviors you have witnessed first-hand."
 msgstr ""
@@ -258,7 +258,7 @@ msgstr ""
 #: ../badgeos-badgestack.php:525
 #: ../../badgeos-badgestack/badgeos-badgestack.php:525
 msgid ""
-"In this Level you’ll set-up a profile on Credly so you can earn, store, and "
+"In this Level you'll set-up a profile on Credly so you can earn, store, and "
 "share badges. You'll also issue a badge to one or more people who "
 "demonstrate skills, values or behaviors you have witnesses first-hand."
 msgstr ""
@@ -274,7 +274,7 @@ msgstr ""
 
 #: ../badgeos-badgestack.php:537
 #: ../../badgeos-badgestack/badgeos-badgestack.php:537
-msgid "Earn the Badge: “Credly Member”"
+msgid "Earn the Badge: &#8220;Credly Member&#8221;"
 msgstr ""
 
 #: ../badgeos-badgestack.php:541 ../badgeos-badgestack.php:746
@@ -285,7 +285,7 @@ msgstr ""
 
 #: ../badgeos-badgestack.php:545
 #: ../../badgeos-badgestack/badgeos-badgestack.php:545
-msgid "Earn the Badge: “Badge Issuer”"
+msgid "Earn the Badge: &#8220;Badge Issuer&#8221;"
 msgstr ""
 
 #: ../badgeos-badgestack.php:549 ../badgeos-badgestack.php:711
@@ -416,7 +416,7 @@ msgstr ""
 #: ../../badgeos-badgestack/badgeos-badgestack.php:618
 msgid ""
 "<a href=\"https://credly.com\">Credly</a> is universal way for you to earn, "
-"store and showcase achievements throughout your life.  Achievements are "
+"store and showcase achievements throughout your life.  Achievements are "
 "represented by badges, which you can earn in virtually every aspect of your "
 "life, from school to the workplace to museums and fitness activities.\n"
 "\n"
@@ -504,12 +504,12 @@ msgstr ""
 
 #: ../badgeos-badgestack.php:662
 #: ../../badgeos-badgestack/badgeos-badgestack.php:662
-msgid "Earn “Customize Your Profile” 30 times."
+msgid "Earn &#8220;Customize Your Profile&#8221; 30 times."
 msgstr ""
 
 #: ../badgeos-badgestack.php:670
 #: ../../badgeos-badgestack/badgeos-badgestack.php:670
-msgid "Earn “Give Someone Credit” 1 time."
+msgid "Earn &#8220;Give Someone Credit&#8221; 1 time."
 msgstr ""
 
 #: ../badgeos-badgestack.php:686
@@ -548,7 +548,7 @@ msgstr ""
 #: ../../badgeos-badgestack/badgeos-badgestack.php:712
 msgid ""
 "A badge says as much about the person or group who issued it as it does "
-"about the recipient.  To earn this \"Issuer\" badge, you will think about "
+"about the recipient.  To earn this \"Issuer\" badge, you will think about "
 "something you value in the world, define the criteria by which you and "
 "others will know that value has been exhibited, and then identify someone "
 "who deserves to be recognized."
@@ -702,7 +702,7 @@ msgstr ""
 
 #: ../../badgeos/includes/admin-settings.php:238
 msgid ""
-"BadgeOS is extremely extensible. Check out examples of what we’ve built with "
+"BadgeOS is extremely extensible. Check out examples of what we've built with "
 "it, and stay connected to the project site for updates, add-ins and news. "
 "Share your ideas and code improvements on our github site so we can keep "
 "making BadgeOS better for everyone."
@@ -964,7 +964,7 @@ msgstr ""
 msgid ""
 "This setting makes the earned badge for this achievement sharable via Credly "
 "on social networks, such as Facebook, Twitter, LinkedIn, Mozilla Backpack, "
-"or the badge earner’s own blog or site."
+"or the badge earner's own blog or site."
 msgstr ""
 
 #: ../../badgeos/includes/credly.php:798
